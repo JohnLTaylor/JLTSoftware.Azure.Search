@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{85A1E70F-98D8-412E-99E8-AD199F7F286C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{5483D9EE-FDC9-432C-B9EF-1ACC79CD50D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JLTSoftware.Azure.Search", "src\JLTSoftware.Azure.Search\JLTSoftware.Azure.Search.csproj", "{DD78D5F5-6881-48E7-954E-C8073E579D50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JLTSoftware.Azure.Search.Test", "test\JLTSoftware.Azure.Search.Test\JLTSoftware.Azure.Search.Test.csproj", "{A2F68C23-4EE2-4DAF-AF4A-0459EEF5D96B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD78D5F5-6881-48E7-954E-C8073E579D50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD78D5F5-6881-48E7-954E-C8073E579D50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD78D5F5-6881-48E7-954E-C8073E579D50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD78D5F5-6881-48E7-954E-C8073E579D50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2F68C23-4EE2-4DAF-AF4A-0459EEF5D96B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2F68C23-4EE2-4DAF-AF4A-0459EEF5D96B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2F68C23-4EE2-4DAF-AF4A-0459EEF5D96B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2F68C23-4EE2-4DAF-AF4A-0459EEF5D96B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DD78D5F5-6881-48E7-954E-C8073E579D50} = {85A1E70F-98D8-412E-99E8-AD199F7F286C}
+		{A2F68C23-4EE2-4DAF-AF4A-0459EEF5D96B} = {5483D9EE-FDC9-432C-B9EF-1ACC79CD50D2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2654737E-AC6A-4FD4-978C-9207E602DD06}
+	EndGlobalSection
+EndGlobal
