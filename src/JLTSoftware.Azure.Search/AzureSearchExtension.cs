@@ -21,6 +21,9 @@
         {
             int parentheses = 0;
 
+            if (string.IsNullOrWhiteSpace(value))
+                return true;
+
             foreach (var ch in value)
             {
                 switch (ch)

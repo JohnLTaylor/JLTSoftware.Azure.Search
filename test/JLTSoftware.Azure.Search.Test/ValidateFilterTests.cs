@@ -7,6 +7,14 @@ namespace JLTSoftware.Azure.Search.Test
     public class ValidateFilterTests
     {
         [TestMethod]
+        public void Empty()
+        {
+            string filter = default;
+            bool result = filter.ValidateFilter();
+            result.Should().BeTrue();
+        }
+
+        [TestMethod]
         public void Simple()
         {
             string filter = "field eq 'value'";
