@@ -1,11 +1,12 @@
 using FluentAssertions;
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace JLTSoftware.Azure.Search.Test
 {
+    [TestClass]
     public class MergeFiltersTests
     {
-        [Test]
+        [TestMethod]
         public void AllAssignedAnd()
         {
             string left = "field1 eq 'value1'";
@@ -14,7 +15,7 @@ namespace JLTSoftware.Azure.Search.Test
             filter.Should().Be($"{left} and {right}");
         }
 
-        [Test]
+        [TestMethod]
         public void AllAssignedOr()
         {
             string left = "field1 eq 'value1'";
@@ -23,7 +24,7 @@ namespace JLTSoftware.Azure.Search.Test
             filter.Should().Be($"{left} or {right}");
         }
 
-        [Test]
+        [TestMethod]
         public void LeftNull()
         {
             string left = default;
@@ -32,7 +33,7 @@ namespace JLTSoftware.Azure.Search.Test
             filter.Should().Be(right);
         }
 
-        [Test]
+        [TestMethod]
         public void RightNull()
         {
             string left = "field eq 'value'";
@@ -41,7 +42,7 @@ namespace JLTSoftware.Azure.Search.Test
             filter.Should().Be(left);
         }
 
-        [Test]
+        [TestMethod]
         public void BothNull()
         {
             string left = default;

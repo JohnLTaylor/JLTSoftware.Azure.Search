@@ -1,11 +1,12 @@
 ﻿using FluentAssertions;
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace JLTSoftware.Azure.Search.Test
 {
+    [TestClass]
     public class ValidateFilterTests
     {
-        [Test]
+        [TestMethod]
         public void Simple()
         {
             string filter = "field eq 'value'";
@@ -13,7 +14,7 @@ namespace JLTSoftware.Azure.Search.Test
             result.Should().BeTrue();
         }
 
-        [Test]
+        [TestMethod]
         public void Complex()
         {
             string filter = "(field1 eq 'value1') and (field2 eq 'value2')";
@@ -21,7 +22,7 @@ namespace JLTSoftware.Azure.Search.Test
             result.Should().BeTrue();
         }
 
-        [Test]
+        [TestMethod]
         public void MissingLeading()
         {
             string filter = "field eq 'value')";
@@ -29,7 +30,7 @@ namespace JLTSoftware.Azure.Search.Test
             result.Should().BeFalse();
         }
 
-        [Test]
+        [TestMethod]
         public void MissingTrailing()
         {
             string filter = "(field eq 'value'";
@@ -37,7 +38,7 @@ namespace JLTSoftware.Azure.Search.Test
             result.Should().BeFalse();
         }
 
-        [Test]
+        [TestMethod]
         public void HackAttack()
         {
             string filter = ") or (field eq 'value') or (";
