@@ -11,6 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JLTSoftware.Azure.Search", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JLTSoftware.Azure.Search.Test", "test\JLTSoftware.Azure.Search.Test\JLTSoftware.Azure.Search.Test.csproj", "{A2F68C23-4EE2-4DAF-AF4A-0459EEF5D96B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{54DE3A12-8CF4-4038-BF7C-F62000B31D81}"
+	ProjectSection(SolutionItems) = preProject
+		..\azure-pipelines.yml = ..\azure-pipelines.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
